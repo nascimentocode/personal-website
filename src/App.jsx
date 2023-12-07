@@ -1,8 +1,8 @@
-import Titulo from "./Titulo"
+import Header from "./Header"
 
 function App() {
   return (
-    <Titulo nome="João Vitor" />
+    <Header />
   )
 }
 
