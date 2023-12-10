@@ -4,10 +4,12 @@ import MainContent from "./MainContent"
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Navbar />
-      <Sidebar />
-      <MainContent />
+      <main>
+        <Sidebar />
+        <MainContent />
+      </main>
     </div>
   )
 }
