@@ -7,15 +7,31 @@
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #121214;
+  color: #E6E6E6;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 400;
 }
 
 /* Navbar */
 nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  height: 70px;display: flex;
+  height: 70px;
+  display: flex;
   background-color: #202024;
   /* box-shadow: 0 0 15px black; */
 }
@@ -35,20 +51,96 @@ nav a.active {
 
 /*Main*/
 main {
-  margin: 100px 0;
-  width: 75%;
+  margin: 175px 50px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 60px;
   justify-content: center;
 }
 
-article {
+/* Sidebar */
+aside {
   background-color: #202024;
-  width: 25%;
+  width: 31.425%;
+  height: 100%;
+  max-width: 351px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 30px;
+  /* border: 2px solid red; */
 }
 
+aside img {
+  border-radius: 50%;
+  width: 175px;
+  padding: 7px;
+  border: 4px solid #E0E0E6;
+}
+
+#profile-name {
+  margin: 22px 0;
+  text-transform: uppercase;
+}
+
+aside h3{
+  margin: 10px 0;
+}
+
+aside span {
+  color: #87868B;
+}
+
+.divider {
+  background-color: #121214;
+  height: 2px;
+  margin: 30px -30px;
+}
+
+#about-sidebar {
+  text-align: left;
+}
+
+#about-sidebar h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#about-sidebar a {
+  display: block;
+  width: 135px;
+  margin-top: 25px;
+  padding: 15px 0;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  
+}
+
+#social-links-sidebar {
+  text-align: start;
+  font-size: 20px;
+}
+
+#social-links-sidebar a {
+  color: #87868B;
+  padding-right: 10px;
+  height: 100px;
+}
+
+#social-links-sidebar a:hover {
+  color: #ffffff;
+}
+
+/* Content */
 section {
   background-color: #202024;
-  width: 75%;
+  border-radius: 5px;
+  width: 63%;
+  max-width: 705px;
+  height: 1000px;
+  /* border: 2px solid red; */
 }
