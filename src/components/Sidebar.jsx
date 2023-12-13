@@ -1,6 +1,6 @@
-import "./index.css"
+import "../index.css"
 
-import Perfil from "./assets/img/perfil.jpg"
+import Perfil from "../assets/img/perfil.jpg"
 
 import { MdLocationPin } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";

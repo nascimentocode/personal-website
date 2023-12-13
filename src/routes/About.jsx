@@ -1,6 +1,6 @@
-import "./index.css"
+import "../index.css"
 
-function MainContent() {
+function About() {
     return (
         <section>
             <h2>Sobre</h2>
@@ -10,4 +10,4 @@ function MainContent() {
     )
 }
 
-export default MainContent
+export default About

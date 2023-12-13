@@ -1,6 +1,7 @@
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
-import MainContent from "./MainContent"
+import Navbar from "./components/Navbar"
+import Sidebar from "./components/Sidebar"
+
+import { Outlet } from "react-router-dom"
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Navbar />
       <main>
         <Sidebar />
-        <MainContent />
+        <Outlet />
       </main>
     </div>
   )
