@@ -51,23 +51,20 @@ nav a.active {
 
 /*Main*/
 main {
-  margin: 175px 50px;
+  margin: 175px 20px;
   display: flex;
-  flex-direction: row;
-  gap: 60px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* Sidebar */
 aside {
+  order: 2;
   background-color: #202024;
-  width: 31.425%;
   height: 100%;
-  max-width: 351px;
   text-align: center;
   border-radius: 5px;
   padding: 30px;
-  /* border: 2px solid red; */
 }
 
 aside img {
@@ -117,30 +114,49 @@ aside span {
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  
 }
 
 #social-links-sidebar {
-  text-align: start;
+  display: flex;
   font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 #social-links-sidebar a {
   color: #87868B;
-  padding-right: 10px;
-  height: 100px;
 }
 
 #social-links-sidebar a:hover {
   color: #ffffff;
 }
 
-/* Content */
 section {
+  order: 1;
   background-color: #202024;
   border-radius: 5px;
-  width: 63%;
-  max-width: 705px;
-  height: 1000px;
-  /* border: 2px solid red; */
+  padding: 30px;
+}
+
+@media (min-width: 769px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  aside {
+    order: 1;
+    width: 31.425%;
+    max-width: 351px;
+    height: 100%;
+  }
+
+  section {
+    order: 2;
+    width: 63%;
+    max-width: 705px;
+    height: 100%;
+  }
 }
