@@ -5,7 +5,7 @@ function Navbar() {
         <nav>
             <a href="/" className="active">Home</a>
             <a href="#sobre">Sobre</a>
-            <a href="#portfolio">Portfólio</a>
+            <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
     )
