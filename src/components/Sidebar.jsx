@@ -17,13 +17,13 @@ function Sidebar() {
                 <h3>Back-End Developer</h3>
                 <h3><span><MdLocationPin /></span> Campinas, SP, Brasil</h3>
             </div>
-            <div className="divider"></div>
+            <div className="divider-sidebar"></div>
             <div id="about-sidebar">
                 <h3>Sobre</h3>
                 <p>Olá, sou João Vitor. Atualmente estou cursando Ciência da Computação.</p>
                 <a href="#">Saiba mais</a>
             </div>
-            <div className="divider"></div>
+            <div className="divider-sidebar"></div>
             <div id="social-links-sidebar">
                 <a href="https://github.com/nascimentocode" target="_blanck"><FaGithub /></a>
                 <a href="https://www.instagram.com/notnascimento/" target="_blanck"><FaInstagram /></a>

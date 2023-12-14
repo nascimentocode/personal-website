@@ -1,9 +1,9 @@
 function Home() {
     return (
         <section>
-            <h2>Bem Vindo</h2>
-            <div className="divider"></div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus, maxime error iste quisquam hic laudantium molestiae corrupti consequatur maiores? Nesciunt dignissimos vel delectus laboriosam animi voluptate a provident cum?</h3>
+            <h2>Sobre este site</h2>
+            <div className="divider-content"></div>
+            <h3>Seja bem-vindo ao meu espaço digital! Este é o lugar onde compartilho meus projetos, experiências e um pouco sobre mim. Aqui, você encontrará informações sobre meus projetos anteriores e meu currículo. Explore à vontade e não hesite em entrar em contato comigo para colaborações ou apenas para trocar ideias sobre o vasto mundo da programação.</h3>
         </section>
     )
 }
