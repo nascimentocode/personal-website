@@ -87,7 +87,7 @@ aside span {
   color: #87868B;
 }
 
-.divider {
+.divider-sidebar {
   background-color: #121214;
   height: 2px;
   margin: 30px -30px;
@@ -136,7 +136,17 @@ section {
   order: 1;
   background-color: #202024;
   border-radius: 5px;
-  padding: 30px;
+  padding: 40px;
+}
+
+section h2 {
+  text-transform: uppercase;
+}
+
+.divider-content {
+  background-color: #121214;
+  height: 2px;
+  margin: 40px -40px;
 }
 
 @media (min-width: 769px) {
