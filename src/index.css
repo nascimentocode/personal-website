@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color-primary: #121214;
+  --bg-color-secondary: #202024;
+  --color-primary: #ffffff;
+  --color-secondary: #E6E6E6;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #121214;
-  color: #E6E6E6;
+  background-color: var(--bg-color-primary);
+  color: var(--color-secondary);
 }
 
 h2 {
-  color: #ffffff;
+  color: var(--color-primary);
   font-size: 25px;
   font-weight: 500;
 }
@@ -32,12 +39,12 @@ nav {
   gap: 5px;
   height: 70px;
   display: flex;
-  background-color: #202024;
+  background-color: var(--bg-color-secondary);
   /* box-shadow: 0 0 15px black; */
 }
 
 nav a {
-  color: #f2f2f2;
+  color: var(--color-primary);
   text-decoration: none;
   padding: 20px 10px;
   font-size: 17px;
@@ -46,7 +53,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid var(--color-primary);
 }
 
 /*Main*/
@@ -60,7 +67,7 @@ main {
 /* Sidebar */
 aside {
   order: 2;
-  background-color: #202024;
+  background-color: var(--bg-color-secondary);
   height: 100%;
   text-align: center;
   border-radius: 5px;
@@ -88,8 +95,8 @@ aside span {
 }
 
 .divider-sidebar {
-  background-color: #121214;
-  height: 2px;
+  background-color: var(--bg-color-primary);
+  height: 3px;
   margin: 30px -30px;
 }
 
@@ -98,7 +105,7 @@ aside span {
 }
 
 #about-sidebar h3 {
-  color: #ffffff;
+  color: var(--color-primary);
   text-transform: uppercase;
 }
 
@@ -108,8 +115,8 @@ aside span {
   margin-top: 25px;
   padding: 15px 0;
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -129,12 +136,12 @@ aside span {
 }
 
 #social-links-sidebar a:hover {
-  color: #ffffff;
+  color: var(--color-primary);
 }
 
 section {
   order: 1;
-  background-color: #202024;
+  background-color: var(--bg-color-secondary);
   border-radius: 5px;
   padding: 40px;
 }
@@ -144,9 +151,31 @@ section h2 {
 }
 
 .divider-content {
-  background-color: #121214;
-  height: 2px;
+  background-color: var(--bg-color-primary);
+  height: 3px;
   margin: 40px -40px;
+}
+
+/* Contato */
+#form-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#form-contact input, textarea{
+  padding: 15px;
+  font-size: 14px;
+} 
+
+#form-contact button {
+  height: 75px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  cursor: pointer;
 }
 
 @media (min-width: 769px) {
