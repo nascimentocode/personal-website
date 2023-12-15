@@ -15,6 +15,7 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--bg-color-primary);
   color: var(--color-secondary);
+  line-height: 1.5;
 }
 
 h2 {
@@ -40,7 +41,6 @@ nav {
   height: 70px;
   display: flex;
   background-color: var(--bg-color-secondary);
-  /* box-shadow: 0 0 15px black; */
 }
 
 nav a {
@@ -139,11 +139,13 @@ aside span {
   color: var(--color-primary);
 }
 
+/* Content */
 section {
   order: 1;
   background-color: var(--bg-color-secondary);
   border-radius: 5px;
   padding: 40px;
+  
 }
 
 section h2 {
@@ -156,7 +158,7 @@ section h2 {
   margin: 40px -40px;
 }
 
-/* Contato */
+/* Content/Contato */
 #form-contact {
   display: flex;
   justify-content: center;
@@ -167,15 +169,28 @@ section h2 {
 #form-contact input, textarea{
   padding: 15px;
   font-size: 14px;
+  background-color: var(--bg-color-primary);
+  border: transparent;
+  color: var(--color-primary);
 } 
+
+#form-contact textarea {
+  height: 200px;
+}
 
 #form-contact button {
   height: 75px;
   font-size: 14px;
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
+  background-color: var(--bg-color-primary);
+  border: transparent;
   color: var(--color-primary);
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#form-contact button:hover {
+  border: 1px solid var(--color-primary);
 }
 
 @media (min-width: 769px) {
