@@ -11,6 +11,18 @@
   --color-secondary: #E6E6E6;
 }
 
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-color-secondary); 
+} */
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--bg-color-primary);
@@ -29,21 +41,37 @@ h3 {
   font-weight: 400;
 }
 
-/* Navbar */
-nav {
+header {
   position: fixed;
-  width: 100%;
   top: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  height: 70px;
-  display: flex;
+  justify-content: center;  
+  width: 100%;
   background-color: var(--bg-color-secondary);
 }
 
-nav a {
+nav {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-secondary);
+}
+
+nav h1 {
+  padding-left: 20px;
+}
+
+/* Navbar */
+#nav-link {  
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+#nav-link a {
   color: var(--color-primary);
   text-decoration: none;
   padding: 20px 10px;
@@ -51,8 +79,8 @@ nav a {
   border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active {
+#nav-link a:hover,
+#nav-link a.active {
   border-bottom: 3px solid var(--color-primary);
 }
 
@@ -163,19 +191,32 @@ section h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 #form-contact input, textarea{
   padding: 15px;
   font-size: 14px;
   background-color: var(--bg-color-primary);
-  border: transparent;
-  color: var(--color-primary);
+  border: 1px solid var(--bg-color-primary);
+  border-radius: 5px;
+  outline: none;
+  color: #757575;
 } 
 
 #form-contact textarea {
   height: 200px;
+  width: 100%;
+  resize: vertical;
+}
+
+#form-contact input:focus, textarea:focus{
+  background-color:  rgba(255,255,255, 5%);
+  border: 1px solid #ffffff;
+}
+
+#form-contact input:hover, textarea:hover {
+  border: 1px solid #ffffff;
 }
 
 #form-contact button {
@@ -183,6 +224,7 @@ section h2 {
   font-size: 14px;
   background-color: var(--bg-color-primary);
   border: transparent;
+  border-radius: 5px;
   color: var(--color-primary);
   cursor: pointer;
   text-transform: uppercase;
