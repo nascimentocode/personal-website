@@ -21,6 +21,9 @@ function Navbar() {
                 <div>
                     <h1>Logo</h1>
                 </div>
+                <div id="hamburguer">
+                    <TfiAlignRight style={{marginRight: "20px", fontSize: "20px"}} />
+                </div>
                 <div id="nav-link" onClick={scrollToTop}>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/sobre">Sobre</NavLink>
