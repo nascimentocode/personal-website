@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 // import { useState } from "react"
-// import { TfiAlignRight } from "react-icons/tfi";
+import { TfiAlignRight } from "react-icons/tfi"
 
 import "../index.css"
 
@@ -11,16 +11,17 @@ function Navbar() {
     //     setShowNavbar(!showNavbar)
     // }
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <header>
             <nav>
                 <div>
                     <h1>Logo</h1>
                 </div>
-                {/* <div id="menu-icon" onClick={handleShowNavbar}>
-                    <TfiAlignRight />
-                </div> */}
-                <div id="nav-link">
+                <div id="nav-link" onClick={scrollToTop}>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/sobre">Sobre</NavLink>
                     <NavLink to="/curriculo">Currículo</NavLink>
