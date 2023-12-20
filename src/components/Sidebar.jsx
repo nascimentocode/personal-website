@@ -14,8 +14,8 @@ function Sidebar() {
             <div>
                 <img src={Perfil} width={200}/>
                 <h2 id="profile-name">João Vitor Nascimento da Silva</h2>
-                <h3>Back-End Developer</h3>
-                <h3><span><MdLocationPin /></span> Campinas, SP, Brasil</h3>
+                <p>Back-End Developer</p>
+                <p><span><MdLocationPin /></span> Campinas, SP, Brasil</p>
             </div>
             <div className="divider-sidebar"></div>
             <div id="about-sidebar">
