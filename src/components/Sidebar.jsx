@@ -8,6 +8,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
+import { NavLink } from "react-router-dom"
+
 function Sidebar() {
     return (
         <aside>
@@ -21,7 +23,7 @@ function Sidebar() {
             <div id="about-sidebar">
                 <h3>Sobre</h3>
                 <p>Olá, sou João Vitor. Atualmente estou cursando Ciência da Computação.</p>
-                <a href="#">Saiba mais</a>
+                <NavLink to="/sobre">Saiba mais</NavLink>
             </div>
             <div className="divider-sidebar"></div>
             <div id="social-links-sidebar">
