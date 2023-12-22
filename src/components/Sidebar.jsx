@@ -32,6 +32,10 @@ function Sidebar() {
                 <a href="https://www.linkedin.com/in/joao-vitor-nascimento-da-silva/" target="_blanck"><FaLinkedin /></a>
                 <a href="mailto:contato.nascimentojv@gmail.com" target="_blanck"><MdOutlineEmail /></a>
             </div>
+            <div className="divider-sidebar"></div>
+            <div id="entitlement">
+                <p>&copy; 2023 Nascimentocode</p>
+            </div>
         </aside>
     )
 }
