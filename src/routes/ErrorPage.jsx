@@ -1,7 +1,9 @@
+import Navbar from "../components/Navbar"
+
 function ErrorPage() {
     return (
         <div>
-            <p>Erro 404!</p>
+            <Navbar />
         </div>
     )
 }
