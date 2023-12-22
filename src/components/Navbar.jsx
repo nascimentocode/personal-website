@@ -1,15 +1,17 @@
 import { NavLink } from "react-router-dom"
-// import { useState } from "react"
-import { TfiAlignRight } from "react-icons/tfi"
+import { useState } from "react"
+import { FiAlignRight } from "react-icons/fi";
 
 import "../index.css"
 
 function Navbar() {
-    // const [showNavbar, setShowNavbar] = useState(false)
+    const [hamburguerOpen, setHamburguerOpen] = useState(
+        window.innerWidth <= 768 ? false : true
+    )
 
-    // const handleShowNavbar = () => {
-    //     setShowNavbar(!showNavbar)
-    // }
+    const toggleHamburguer = () => {
+        setHamburguerOpen(!hamburguerOpen)
+    }
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -18,13 +20,13 @@ function Navbar() {
     return (
         <header>
             <nav>
-                <div>
-                    <h1>Logo</h1>
+                <div id="brand">
+                    <h1>Nascimento<span>code</span></h1>
                 </div>
-                <div id="hamburguer">
-                    <TfiAlignRight style={{marginRight: "20px", fontSize: "20px"}} />
+                <div id="icon" onClick={toggleHamburguer}>
+                    <FiAlignRight />
                 </div>
-                <div id="nav-link" onClick={scrollToTop}>
+                <div id="nav-link" style={{display: hamburguerOpen ? "flex" : "none"}} onClick={scrollToTop}>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/sobre">Sobre</NavLink>
                     <NavLink to="/curriculo">Currículo</NavLink>
