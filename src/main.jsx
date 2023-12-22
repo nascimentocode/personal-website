@@ -18,23 +18,23 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "personal-website",
         element: <Home />
       },
       {
-        path: "sobre",
+        path: "personal-website/sobre",
         element: <About />
       },
       {
-        path: "curriculo",
+        path: "personal-website/curriculo",
         element: <Resume />
       },
       {
-        path: "projetos",
+        path: "personal-website/projetos",
         element: <Projects />
       },
       {
-        path: "contato",
+        path: "personal-website/contato",
         element: <Contact />
       }
     ]
