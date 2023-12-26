@@ -97,8 +97,7 @@ nav h1 {
   border-bottom: 3px solid transparent;
 }
 
-#nav-link a:hover,
-#nav-link a.active {
+#nav-link a:hover {
   border-bottom: 3px solid var(--color-primary);
 }
 
