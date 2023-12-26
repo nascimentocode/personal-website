@@ -5,11 +5,11 @@ function Contact() {
         <section>
             <h2>Contato</h2>
             <div className="divider-content"></div>
-            <form id="form-contact">
-                <input type="text" placeholder="Nome" required />
-                <input type="email" placeholder="Email" required />
-                <textarea placeholder="Mensagem"></textarea>
-                <button>Enviar</button>
+            <form action="https://formspree.io/f/xpzvaerj" method="POST" id="form-contact">
+                <input type="text" name="name" placeholder="Nome" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     )
