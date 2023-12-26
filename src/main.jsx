@@ -18,31 +18,31 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "personal-website",
+        path: "/",
         element: <Home />
       },
       {
-        path: "personal-website/sobre",
+        path: "sobre",
         element: <About />
       },
       {
-        path: "personal-website/curriculo",
+        path: "curriculo",
         element: <Resume />
       },
       {
-        path: "personal-website/projetos",
+        path: "projetos",
         element: <Projects />
       },
       {
-        path: "personal-website/contato",
+        path: "contato",
         element: <Contact />
       }
     ]
   }
-])
+], {basename: "/personal-website"})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} basename="/personal-website"/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
