@@ -1,21 +1,29 @@
 import { NavLink } from "react-router-dom"
-import { useState } from "react"
-import { FiAlignRight } from "react-icons/fi";
+import { useEffect, useState } from "react"
+import { FiAlignRight, FiX } from "react-icons/fi";
 
 import "../index.css"
 
 function Navbar() {
-    const [hamburguerOpen, setHamburguerOpen] = useState(
-        window.innerWidth <= 768 ? false : true
-    )
+    const [hamburguerOpen, setHamburguerOpen] = useState(false)
 
     const toggleHamburguer = () => {
         setHamburguerOpen(!hamburguerOpen)
     }
 
+    const handleResize = () => window.innerWidth <= 768 && hamburguerOpen ? setHamburguerOpen(false) : setHamburguerOpen(true)
+
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-    }
+    }   
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [hamburguerOpen])
 
     return (
         <header>
@@ -24,9 +32,9 @@ function Navbar() {
                     <h1>Nascimento<span>code</span></h1>
                 </div>
                 <div id="icon" onClick={toggleHamburguer}>
-                    <FiAlignRight />
+                    {hamburguerOpen ? <FiX /> : <FiAlignRight />}
                 </div>
-                <div id="nav-link" style={{display: hamburguerOpen ? "flex" : "none"}} onClick={scrollToTop}>
+                <div id="nav-link" style={{display: hamburguerOpen || window.innerWidth > 768 ? "flex" : "none"}} onClick={scrollToTop}>
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="sobre">Sobre</NavLink>
                     <NavLink to="curriculo">Currículo</NavLink>
