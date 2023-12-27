@@ -10,7 +10,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 import { NavLink } from "react-router-dom"
 
-function Sidebar() {
+function Sidebar({to, textButton}) {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     }
@@ -27,7 +27,7 @@ function Sidebar() {
             <div id="about-sidebar">
                 <h3>Sobre</h3>
                 <p>Olá, sou João Vitor. Atualmente estou cursando Ciência da Computação.</p>
-                <NavLink to="/sobre" onClick={scrollToTop}>Saiba mais</NavLink>
+                <NavLink to={to} onClick={scrollToTop}>{textButton}</NavLink>
             </div>
             <div className="divider-sidebar"></div>
             <div id="social-links-sidebar">
