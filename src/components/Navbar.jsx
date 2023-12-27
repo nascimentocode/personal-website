@@ -11,7 +11,15 @@ function Navbar() {
         setHamburguerOpen(!hamburguerOpen)
     }
 
-    const handleResize = () => window.innerWidth <= 768 && hamburguerOpen ? setHamburguerOpen(false) : setHamburguerOpen(true)
+    const handleResize = () => {
+        if (window.innerWidth > 768 && !hamburguerOpen) {
+            setHamburguerOpen(true)
+        }
+        
+        if (window.innerWidth <= 768 && hamburguerOpen) {
+            setHamburguerOpen(false)
+        }
+    }
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
