@@ -1,3 +1,4 @@
+import { useState } from "react"
 import "../index.css"
 
 function Contact() {
@@ -8,7 +9,7 @@ function Contact() {
             <form action="https://formspree.io/f/xpzvaerj" method="POST" id="form-contact">
                 <input type="text" name="name" placeholder="Nome" required />
                 <input type="email" name="email" placeholder="Email" required />
-                <textarea name="message" placeholder="Mensagem"></textarea>
+                <textarea name="message" placeholder="Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </section>
