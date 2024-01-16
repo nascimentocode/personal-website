@@ -24,7 +24,7 @@ function Resume() {
                     <div>
                         <ProgressBar bgcolor="#00304D" progress="75" language="Python" level="3"/>
                         <ProgressBar bgcolor="#EB2025" progress="75" language="Java" level="3"/>
-                        <ProgressBar bgcolor="#DB7533" progress="75" language="SQL" level="3"/>
+                        <ProgressBar bgcolor="#DB7533" progress="75" language="MySQL" level="3"/>
                         <ProgressBar bgcolor="#BD9E00" progress="50" language="JavaScript" level="2"/>
                         <ProgressBar bgcolor="#787CB4" progress="50" language="PHP" level="2"/>
                         <ProgressBar bgcolor="#087EA4" progress="50" language="React" level="2"/>
