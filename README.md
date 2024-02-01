@@ -28,8 +28,8 @@ Se você quiser contribuir para o projeto, siga estas etapas:
 
 Siga essas instruções para executar o projeto localmente:
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/seu-site-pessoal.git`
-2. Entre no diretório do projeto: `cd seu-site-pessoal`
+1. Clone o repositório: `git clone https://github.com/nascimentocode/personal-website`
+2. Entre no diretório do projeto: `cd personal-website`
 3. Instale as dependências: `npm install`
 4. Inicie o servidor de desenvolvimento: `npm run dev`
 5. Abra o navegador e acesse `http://localhost:3000`
