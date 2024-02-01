@@ -13,17 +13,7 @@ Bem-vindo ao repositório do meu site pessoal! Este projeto foi criado para comp
 - **Projetos:** Explore os diferentes projetos em que estou trabalhando.
 - **Experiências:** Compartilho minhas experiências, aprendizados e conquistas.
 - **Sobre Mim:** Descubra mais sobre minha formação, habilidades e interesses.
-
-## Como Contribuir
-
-Se você quiser contribuir para o projeto, siga estas etapas:
-
-1. Faça um fork do repositório.
-2. Crie uma nova branch para suas alterações: `git checkout -b sua-feature`
-3. Faça commit das suas alterações: `git commit -m 'Adicionando nova funcionalidade'`
-4. Faça push para a branch: `git push origin sua-feature`
-5. Abra um Pull Request.
-
+  
 ## Como Executar Localmente
 
 Siga essas instruções para executar o projeto localmente:
