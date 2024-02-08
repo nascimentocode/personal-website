@@ -3,10 +3,10 @@ import "../index.css"
 function CardProject({link, title, data, img, desc}){
     return (
         <div id="card-project">
-            <a href={link}>
+            <a href={link} target="_blank">
             
                 <div id="card-header">
-                    <h2 href={link} target="_blank">{title}</h2>
+                    <h2>{title}</h2>
                     <p>{data}</p>
                 </div>
                 <div id="card-img">
