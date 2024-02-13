@@ -322,6 +322,27 @@ section h2 {
   color: var(--color-secondary);
 }
 
+/* Content/Status */
+#stats-table{
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#stats-table table{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-color-primary);
+}
+
+#stats-table tbody, td{
+  padding: 1rem;
+  text-align: left;
+}
+
+#stats-table tr:nth-of-type(2n) {
+  background-color: var(--bg-color-secondary);
+}
+
 /* Content/Contato */
 #form-contact {
   display: flex;
