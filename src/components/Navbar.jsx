@@ -47,6 +47,7 @@ function Navbar() {
                     <NavLink to="sobre" onClick={toggleHamburguer}>Sobre</NavLink>
                     <NavLink to="curriculo" onClick={toggleHamburguer}>Currículo</NavLink>
                     <NavLink to="projetos" onClick={toggleHamburguer}>Projetos</NavLink>
+                    <NavLink to="status" onClick={toggleHamburguer}>Status</NavLink>
                     <NavLink to="contato" onClick={toggleHamburguer}>Contato</NavLink>
                 </div>
             </nav>
