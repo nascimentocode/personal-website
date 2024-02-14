@@ -320,26 +320,26 @@ section h2 {
 #card-description p{
   font-size: 15px;
   color: var(--color-secondary);
-}
+} 
 
 /* Content/Status */
-#stats-table{
+#stats-personal-table{
   max-width: 100%;
   overflow-x: auto;
 }
 
-#stats-table table{
+#stats-personal-table table{
   width: 100%;
   border-collapse: collapse;
   background-color: var(--bg-color-primary);
 }
 
-#stats-table tbody, td{
+#stats-personal-table tbody, td{
   padding: 1rem;
   text-align: left;
 }
 
-#stats-table tr:nth-of-type(2n) {
+#stats-personal-table tr:nth-of-type(2n) {
   background-color: var(--bg-color-secondary);
 }
 

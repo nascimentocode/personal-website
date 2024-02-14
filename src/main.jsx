@@ -9,7 +9,7 @@ import About from './routes/About.jsx'
 import Resume from './routes/Resume.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Projects from './routes/Projects.jsx'
-import Status from './routes/Stats.jsx'
+import Stats from './routes/Stats.jsx'
 import Contact from './routes/Contact.jsx'
 
 const router = createBrowserRouter([
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "status",
-        element: <Status />
+        element: <Stats />
       },
       {
         path: "contato",

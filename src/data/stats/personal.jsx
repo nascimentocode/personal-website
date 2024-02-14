@@ -16,8 +16,6 @@ function Age() {
         }
     }, [])
 
-    console.log({age})
-
     return <>{age}</>
 }
 
@@ -28,14 +26,14 @@ const data = [
         value: <Age />
     },
     {
-        key: 'countries',
-        label: 'Países visitados',
+        key: "countries",
+        label: "Países visitados",
         value: 0
     },
     {
-        key: 'location',
-        label: 'Atual Cidade',
-        value: 'Campinas, SP'
+        key: "location",
+        label: "Atual Cidade",
+        value: "Campinas, SP"
     },
 ]
 
