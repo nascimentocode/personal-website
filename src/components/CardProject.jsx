@@ -1,19 +1,18 @@
 import "../index.css"
 
-function CardProject({link, title, data, img, desc}){
+function CardProject({ data }){
     return (
         <div id="card-project">
-            <a href={link} target="_blank">
-            
+            <a href={data.link} target="_blank">
                 <div id="card-header">
-                    <h2>{title}</h2>
-                    <p>{data}</p>
+                    <h2>{data.label}</h2>
+                    <p>{data.date}</p>
                 </div>
                 <div id="card-img">
-                    <img src={img} alt="Tela da aplicação" />
+                    <img src={data.img} alt="Tela da aplicação" />
                 </div>
                 <div id="card-description">
-                    <p>{desc}.</p>
+                    <p>{data.desc}.</p>
                 </div>
             </a>
         </div>
