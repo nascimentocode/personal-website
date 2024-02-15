@@ -11,10 +11,10 @@ const data = [
         label: "Número de forks",
         key: "forks"
     },
-    {
-        label: "Ultima atualização em",
-        key: "pushed_at"
-    },
+    // {
+    //     label: "Ultima atualização em",
+    //     key: "pushed_at"
+    // },
 ]
 
 export default data
