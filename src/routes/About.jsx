@@ -1,12 +1,26 @@
 import "../index.css"
 
+import React,  { useEffect, useState } from "react"
+
 function About() {
+    const [age, setAge] = useState()
+
+    const calculateAge = () => {
+        const birthDay =  new Date('2002-01-18T00:00:00')
+
+        setAge(Math.floor((Date.now() - birthDay) / 31557600000))
+    }
+
+    useEffect(() => {
+        calculateAge()
+    }, [age])
+
     return (
         <section>
             <h2>Sobre mim</h2>
             <div className="divider-content"></div>
             <div className="section-content">
-                <p>Olá! Sou um entusiasta da tecnologia de 21 anos apaixonado pela arte do desenvolvimento Back-End. Minha jornada nesse mundo fascinante começou lá em 2017, mas foi em 2020 que decidi mergulhar de cabeça nos estudos e na prática para aprimorar minhas habilidades.</p>
+                <p>Olá! Sou um entusiasta da tecnologia de {age} anos apaixonado pela arte do desenvolvimento Back-End. Minha jornada nesse mundo fascinante começou lá em 2017, mas foi em 2020 que decidi mergulhar de cabeça nos estudos e na prática para aprimorar minhas habilidades</p>
                 <p>Durante meu período como estudante de Técnico em Informática, tive a oportunidade de explorar várias linguagens, incluindo PHP, SQL, C#, e até me aventurar um pouco no universo do React-Native. Esse período foi fundamental para despertar meu interesse e direcionar meu caminho para a Ciência da Computação, na qual iniciei minha jornada acadêmica em julho de 2020.</p>
                 <p>Ao longo dessa trajetória acadêmica, tive a oportunidade de me aprofundar em linguagens como Python, Java, C++, SQL e Bash. No entanto, minha sede por conhecimento vai além do currículo acadêmico. Por minha própria vontade, mergulhei em estudos envolvendo Python, Java, Javascript, Typescript e Lua. A paixão por aprender é o que me impulsiona, pois acredito que o conhecimento é um oceano sem limites, e estou sempre ansioso para explorar novos horizontes.</p>
                 <p>Adoro desafios e a complexidade do desenvolvimento Back-End me fascina. Enxergo a programação não apenas como uma profissão, mas como uma forma de expressão criativa, onde cada linha de código é uma oportunidade de criar algo inovador e funcional.</p>
