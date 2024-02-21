@@ -37,7 +37,7 @@ function Navbar() {
         <header>
             <nav>
                 <div id="brand">
-                    <h1>Nascimento<span>code</span></h1>
+                    <NavLink to="/">Nascimento<span>code</span></NavLink>
                 </div>
                 <div id="icon" onClick={toggleHamburguer}>
                     {hamburguerOpen ? <FiX /> : <FiAlignRight />}
