@@ -2,8 +2,32 @@ import PGImg from "../assets/projects/passwordGenerator.png"
 import EHSImg from "../assets/projects/sistemaHistoricoEscolar.jpg"
 import LSSImg from "../assets/projects/sistemaLinear.png"
 import BGImg from "../assets/projects/barcodeGenerator.jpg"
+import IASImg from "../assets/projects/IAStocks.png"
+import AAImg from "../assets/projects/automationAnalysis.png"
+import ABImg from "../assets/projects/automationBudget.png"
 
 const data = [
+    {
+        link: "https://github.com/nascimentocode/IA-predict-stock-price",
+        label: "IA de Previsão do Preço de Ações",
+        date: "MARÇO, 2024",
+        img: IASImg,
+        desc: "Este projeto consiste em uma IA de previsão de comportamento e preço de ações"
+    },
+    {
+        link: "https://github.com/nascimentocode/investment-analysis-automation",
+        label: "Automatização de Análise de Investimento",
+        date: "MARÇO, 2024",
+        img: AAImg,
+        desc: "Este projeto consiste em automatizar o envio por email de análises das cotações de ações"
+    },
+    {
+        link: "https://github.com/nascimentocode/budget-issuance-automation",
+        label: "Automatização de Geração de Orçamentos em PDF",
+        date: "MARÇO, 2024",
+        img: ABImg,
+        desc: "Este projeto consiste em automatizar a geração de orçamentos em PDF"
+    },
     {
         link: "https://github.com/nascimentocode/NWL-Expert-Python",
         label: "Gerador de Código de Barra",
