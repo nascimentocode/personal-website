@@ -1,34 +1,41 @@
 const data = [
     {
-        bgcolor: "#00304D",
+        bgcolor: "#40494E",
+        progress: 50,
+        language: "SQLite",
+        level: 2,
+        category: ["banco de dados", "desenvolvimento web"]
+    },
+    {
+        bgcolor: "#E47272",
         progress: 25,
         language: "Bash",
         level: 1,
         category: ["ferramentas", "linguagens"]
     },
     {
-        bgcolor: "#00304D",
+        bgcolor: "#689B68",
         progress: 75,
         language: "Python",
         level: 3,
         category: ["linguagens", "python"]
     },
     {
-        bgcolor: "#EB2025",
+        bgcolor: "#FFA500",
         progress: 75,
         language: "Java",
         level: 3,
         category: ["linguagens"]
     },
     {
-        bgcolor: "#DB7533",
+        bgcolor: "#40494E",
         progress: 75,
         language: "MySQL",
         level: 3,
-        category: ["banco de dados", "linguagens"]
+        category: ["banco de dados", "linguagens", "desenvolvimento web"]
     },
     {
-        bgcolor: "#BD9E00",
+        bgcolor: "#515DD4",
         progress: 50,
         language: "JavaScript",
         level: 2,
@@ -42,28 +49,28 @@ const data = [
         category: ["langugages", "desenvolvimento web"]
     },
     {
-        bgcolor: "#087EA4",
+        bgcolor: "#515DD4",
         progress: 50,
         language: "React",
         level: 2,
         category: ["javascript", "desenvolvimento web"]
     },
     {
-        bgcolor: "#3178C6",
+        bgcolor: "#515DD4",
         progress: 25,
         language: "Typescript",
         level: 1,
         category: ["javascript", "desenvolvimento web", "linguagens"]
     },
     {
-        bgcolor: "#3f631e",
+        bgcolor: "#3896E2",
         progress: 25,
         language: "Django",
         level: 1,
         category: ["desenvolvimento web", "python"]
     },
     {
-        bgcolor: "black",
+        bgcolor: "#3896E2",
         progress: 25,
         language: "Flask",
         level: 1,
