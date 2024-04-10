@@ -244,7 +244,6 @@ section h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0px 15px;
   padding: 20px 0;
 }
 
@@ -254,6 +253,7 @@ section h2 {
   text-transform: uppercase;
   font-weight: 500;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 #navigation-skill a:hover,
