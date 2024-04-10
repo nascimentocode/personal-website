@@ -5,23 +5,12 @@
 }
 
 :root {
+  --color-theme: rgb(49, 111, 161);
   --bg-color-primary: #121214;
   --bg-color-secondary: #202024;
   --color-primary: #ffffff;
   --color-secondary: #E6E6E6;
 }
-
-/* ::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--bg-color-secondary); 
-} */
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -71,7 +60,7 @@ nav {
 }
 
 #brand span {
-  color: rgb(49, 111, 161);
+  color: var(--color-theme);
 }
 
 #icon {
@@ -249,6 +238,28 @@ section h2 {
 
 #skills {
   margin-top: 10px;
+}
+
+#navigation-skill {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px 15px;
+  padding: 20px 0;
+}
+
+#navigation-skill a {
+  padding: 15px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+#navigation-skill a:hover,
+#navigation-skill a.active {
+  color: var(--color-theme);
+  border: 1px solid var(--color-theme);
 }
 
 #progress-bar {
