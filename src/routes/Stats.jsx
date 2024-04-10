@@ -20,11 +20,10 @@ function Stats(){
         )
     }, [])
 
+    console.log(data)
     useEffect(() => {
         fetchData();
     }, [fetchData]);
-
-    console.log(data)
 
     return (
         <section>
@@ -51,12 +50,23 @@ function Stats(){
                     <div id="stats-site-table">
                         <table>
                             <tbody>
-                                {data.map((val) => (
-                                    <tr>
-                                        <td>{val.label}</td>
-                                        <td>{val.value}</td>
-                                    </tr>
-                                ))}
+                                {data.map((val) => {
+                                    if (val.hasOwnProperty('format')) {
+                                        return (
+                                            <tr>
+                                                <td>{val.label}</td>
+                                                <td>{val.format(val.value)}</td>
+                                            </tr>
+                                        )
+                                    } else {
+                                        return (
+                                            <tr>
+                                                <td>{val.label}</td>
+                                                <td>{val.value}</td>
+                                            </tr>
+                                        )
+                                    }
+                                })}
                             </tbody>
                         </table>
                     </div>
