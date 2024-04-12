@@ -39,7 +39,7 @@ const data = [
         progress: 75,
         language: "MySQL",
         level: 3,
-        category: ["banco de dados", "linguagens", "desenvolvimento web"]
+        category: ["banco de dados", "desenvolvimento web"]
     },
     {
         bgcolor: "#515DD4",
