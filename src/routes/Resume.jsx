@@ -30,7 +30,7 @@ function Resume() {
                     <h3>Skills</h3>
                     <NavigationSkill setSelectedSkills={setSelectedCategory} selectedCategory={selectedCategory} />
                     <div>
-                        {filteredSkills.sort((a, b) => b.level - a.level).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
+                        {filteredSkills.sort((a, b) => b.competence - a.competence || a.title.localeCompare(b.title)).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
                     </div>
                 </div>
             </div>
