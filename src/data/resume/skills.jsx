@@ -1,5 +1,23 @@
 const data = [
     {
+        bgcolor: "#40494E",
+        title: "PostgreSQL",
+        competence: 1,
+        category: ["banco de dados", "desenvolvimento web"]
+    },
+    {
+        bgcolor: "#689B68",
+        title: "HTML + CSS",
+        competence: 3,
+        category: ["linguagens", "desenvolvimento web"]
+    },
+    {
+        bgcolor: "#C3423F",
+        title: "Boostrap",
+        competence: 2,
+        category: ["ferramentas", "desenvolvimento web"]
+    },
+    {
         bgcolor: "#C3423F",
         title: "Git",
         competence: 2,
