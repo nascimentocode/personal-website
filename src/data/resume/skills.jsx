@@ -1,5 +1,12 @@
 const data = [
     {
+        bgcolor: "#C3423F",
+        progress: 50,
+        language: "Git",
+        level: 2,
+        category: ["ferramentas"]
+    },
+    {
         bgcolor: "#40494E",
         progress: 50,
         language: "SQLite",
@@ -7,7 +14,7 @@ const data = [
         category: ["banco de dados", "desenvolvimento web"]
     },
     {
-        bgcolor: "#E47272",
+        bgcolor: "#689B68",
         progress: 25,
         language: "Bash",
         level: 1,
@@ -21,7 +28,7 @@ const data = [
         category: ["linguagens", "python"]
     },
     {
-        bgcolor: "#FFA500",
+        bgcolor: "#689B68",
         progress: 75,
         language: "Java",
         level: 3,
@@ -42,7 +49,7 @@ const data = [
         category: ["javascript", "linguagens", "desenvolvimento web"]
     },
     {
-        bgcolor: "#787CB4",
+        bgcolor: "#689B68",
         progress: 50,
         language: "PHP",
         level: 2,
