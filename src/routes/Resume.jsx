@@ -1,7 +1,7 @@
 import "../index.css"
 import { useState } from "react"
 
-import NavigationSkill from "../components/NavigationSkill"
+import NavigationFilter from "../components/NavigationFilter"
 import ProgressBar from "../components/ProgressBar"
 import data from "../data/resume/skills"
 
@@ -10,13 +10,15 @@ function Resume() {
 
     const filteredSkills = selectedCategory === "todas" ? data : data.filter(skill => skill.category.includes(selectedCategory))
 
+    const filters = ["todas", "banco de dados", "javascript", "linguagens", "python", "ferramentas", "desenvolvimento web"]
+
     return (
         <section>
             <h2>Currículo</h2>
             <div className="divider-content"></div>
             <div className="section-content">
                 <div id="education">
-                    <h3>Formação Acadêmica</h3>
+                    <h3>Formação Acadêmica</h3> 
                     <div>
                         <a href="https://unasp.br/" target="_blank">UNASP</a>
                         <p>Ensino Médio / Técnico em Informática - Concluído em 2019</p>
@@ -28,7 +30,7 @@ function Resume() {
                 </div>
                 <div id="skills">
                     <h3>Skills</h3>
-                    <NavigationSkill setSelectedSkills={setSelectedCategory} selectedCategory={selectedCategory} />
+                    <NavigationFilter setSelectedFilters={setSelectedCategory} selectedFilter={selectedCategory} filters={filters} />
                     <div>
                         {filteredSkills.sort((a, b) => b.competence - a.competence || a.title.localeCompare(b.title)).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
                     </div>
