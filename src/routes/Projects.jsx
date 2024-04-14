@@ -12,13 +12,19 @@ function Projects() {
 
     const filters = ["todas", "python", "java"]
 
+    let colorLanguage = ""
+
     return (
         <section>
             <h2>Projetos</h2>
             <NavigationFilter setSelectedFilters={setSelectedLanguage} selectedFilter={selectedLanguage} filters={filters} />
             <div className="divider-content"></div>
             <div className="section-content">
-                {filteredProjects.map((project, index) => <CardProject key={index} data={project} /> )}
+                {filteredProjects.map((project, index) => {
+                    if (project.language.includes("java")) colorLanguage = "#FFA500"
+                    else colorLanguage = "#7ED957"
+                    return <CardProject key={index} data={project} colorLanguage={colorLanguage} /> 
+                })}
             </div>
         </section>
     )
