@@ -1,5 +1,11 @@
 const data = [
     {
+        bgcolor: "#689B68",
+        title: "Lua",
+        competence: 1,
+        category: ["linguagens"]
+    },
+    {
         bgcolor: "#40494E",
         title: "PostgreSQL",
         competence: 1,
