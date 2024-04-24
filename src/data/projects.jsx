@@ -5,8 +5,17 @@ import BGImg from "../assets/projects/barcodeGenerator.jpg"
 import IASImg from "../assets/projects/IAStocks.png"
 import AAImg from "../assets/projects/automationAnalysis.png"
 import ABImg from "../assets/projects/automationBudget.png"
+import TSImg from "../assets/projects/telemedicine-system.png"
 
 const data = [
+    {
+        link: "https://github.com/nascimentocode/telemedicine-system",
+        label: "Sistema de Telemedicina",
+        language: ["python"],
+        date: "ABRIL, 2024",
+        img: TSImg,
+        desc: "Este projeto consiste em uma plataforma que permite a prestação de serviços médicos à distância, utilizando tecnologias de comunicação para conectar pacientes e profissionais de saúde."
+    },
     {
         link: "https://github.com/nascimentocode/IA-predict-stock-price",
         label: "IA de Previsão do Preço de Ações",
@@ -14,7 +23,7 @@ const data = [
         date: "MARÇO, 2024",
         img: IASImg,
         desc: "Este projeto consiste em uma IA de previsão de comportamento e preço de ações"
-    },
+},
     {
         link: "https://github.com/nascimentocode/investment-analysis-automation",
         label: "Automatização de Análise de Investimento",
