@@ -87,7 +87,7 @@ const data = [
     {
         bgcolor: "#3896E2",
         title: "Django",
-        competence: 1,
+        competence: 2,
         category: ["desenvolvimento web", "python"]
     },
     {

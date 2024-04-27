@@ -23,7 +23,7 @@ const data = [
         date: "MARÇO, 2024",
         img: IASImg,
         desc: "Este projeto consiste em uma IA de previsão de comportamento e preço de ações"
-},
+    },
     {
         link: "https://github.com/nascimentocode/investment-analysis-automation",
         label: "Automatização de Análise de Investimento",
