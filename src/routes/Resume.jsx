@@ -3,7 +3,7 @@ import { useState } from "react"
 
 import NavigationFilter from "../components/NavigationFilter"
 import ProgressBar from "../components/ProgressBar"
-import data from "../data/resume/skills"
+import { data } from "../data/resume/skills"
 
 function Resume() {
     const [selectedCategory, setSelectedCategory] = useState("todas")
@@ -32,7 +32,7 @@ function Resume() {
                     <h3>Skills</h3>
                     <NavigationFilter setSelectedFilters={setSelectedCategory} selectedFilter={selectedCategory} filters={filters} />
                     <div>
-                        {filteredSkills.sort((a, b) => b.competence - a.competence || a.title.localeCompare(b.title)).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
+                    {filteredSkills.sort((a, b) => b.competence - a.competence || a.title.localeCompare(b.title)).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
                     </div>
                 </div>
             </div>
