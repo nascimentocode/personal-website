@@ -3,12 +3,15 @@ import { useState } from "react"
 
 import NavigationFilter from "../components/NavigationFilter"
 import ProgressBar from "../components/ProgressBar"
-import { data } from "../data/resume/skills"
+import Certificates from "../components/Certificates"
+
+import { skills } from "../data/resume/skills"
+import { certificates } from "../data/resume/certificates"
 
 function Resume() {
     const [selectedCategory, setSelectedCategory] = useState("todas")
 
-    const filteredSkills = selectedCategory === "todas" ? data : data.filter(skill => skill.category.includes(selectedCategory))
+    const filteredSkills = selectedCategory === "todas" ? skills : skills.filter(skill => skill.category.includes(selectedCategory))
 
     const filters = ["todas", "banco de dados", "javascript", "linguagens", "python", "ferramentas", "desenvolvimento web"]
 
@@ -33,6 +36,14 @@ function Resume() {
                     <NavigationFilter setSelectedFilters={setSelectedCategory} selectedFilter={selectedCategory} filters={filters} />
                     <div>
                     {filteredSkills.sort((a, b) => b.competence - a.competence || a.title.localeCompare(b.title)).map((skill, index) => <ProgressBar key={index} data={skill} /> )}
+                    </div>
+                </div>
+                <div id="certificates">
+                    <h3>Certificados</h3>
+                    <div>
+                        <ul>
+                            {certificates.map((certificate, index) => <Certificates key={certificate.title} title={certificate.title} imageURL={certificate.imageURL} last={index === certificates.length - 1} />)}
+                        </ul>
                     </div>
                 </div>
             </div>
