@@ -6,7 +6,7 @@ export const skillColor = {
     "ferramentas": "#C3423F",
 }
 
-export const data = [
+export const skills = [
     {
         title: "Lua",
         competence: 1,
