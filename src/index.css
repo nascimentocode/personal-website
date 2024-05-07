@@ -510,6 +510,7 @@ section h2 {
 
   #certificates ul li {
     display: inline;
+    padding-top: 0;
   }
 
   #certificates a {
