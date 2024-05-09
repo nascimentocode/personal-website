@@ -23,7 +23,7 @@ export const skills = [
         category: ["linguagens", "desenvolvimento web"]
     },
     {
-        title: "Boostrap",
+        title: "Bootstrap",
         competence: 2,
         category: ["ferramentas", "desenvolvimento web"]
     },
