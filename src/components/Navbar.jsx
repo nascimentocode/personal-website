@@ -43,7 +43,6 @@ function Navbar() {
                     {hamburguerOpen ? <FiX /> : <FiAlignRight />}
                 </div>
                 <div id="nav-link" style={{display: hamburguerOpen || window.innerWidth > 768 ? "flex" : "none"}} onClick={scrollToTop}>
-                    <NavLink to="/" onClick={toggleHamburguer}>Home</NavLink>
                     <NavLink to="sobre" onClick={toggleHamburguer}>Sobre</NavLink>
                     <NavLink to="curriculo" onClick={toggleHamburguer}>Currículo</NavLink>
                     <NavLink to="projetos" onClick={toggleHamburguer}>Projetos</NavLink>
