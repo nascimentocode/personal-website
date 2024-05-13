@@ -1,16 +1,19 @@
 import { useRouteError } from "react-router-dom"
 import Navbar from "../components/Navbar"
+import { useTranslation } from "react-i18next";
 
 function ErrorPage() {
-    const error = useRouteError();
+    const { t } = useTranslation('errorPage')
+
+    const error = useRouteError()
 
     return (
         <div>
             <Navbar />
             <main>
                 <div id="error">
-                    <h1>Oops!</h1>
-                    <p>Sorry, an unexpected error has occurred.</p>
+                    <h1>{t('ops')}</h1>
+                    <p>{t('sorry')}</p>
                     <p>
                         <i>{error.statusText || error.message}</i>
                     </p>
