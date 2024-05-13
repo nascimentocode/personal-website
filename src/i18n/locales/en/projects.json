@@ -1,0 +1,36 @@
+{
+    "topic": "Projects",
+    "filterAll": "All",
+
+    "telemedecineSystemLabel": "Telemedicine system",
+    "telemedecineSystemDate": "April",
+    "telemedecineSystemDesc": "This project consists of a platform that allows the provision of medical services remotely, using communication technologies to connect patients and healthcare professionals",
+
+    "IAPredictStockPriceLabel": "AI stock price prediction",
+    "IAPredictStockPriceDate": "March",
+    "IAPredictStockPriceDesc": "This project consists of a behavior and stock price prediction AI",
+
+    "investmentAnalysisAutomationLabel": "Investment Analysis Automation",
+    "investmentAnalysisAutomationDate": "March",
+    "investmentAnalysisAutomationDesc": "This project consists of automating the sending of stock price analyzes by email",
+
+    "budgetIssuanceAutomationLabel": "Automation of PDF budget generation",
+    "budgetIssuanceAutomationDate": "March",
+    "budgetIssuanceAutomationDesc": "This project consists of automating the generation of budgets in PDF",
+
+    "barcodeGeneratorLabel": "Barcode generator",
+    "barcodeGeneratorDate": "February",
+    "barcodeGeneratorDesc": "This project consists of a backend that, upon a web request, uses the value received to generate a barcode",
+
+    "linearSystemResolverLabel": "Linear System Resolver",
+    "linearSystemResolverDate": "February",
+    "linearSystemResolverDesc": "This project consists of a linear systems resolver, which receives an input in CSV format representing a linear system and returns the solution of that system",
+
+    "educationalHistorySystemLabel": "Educational History System",
+    "educationalHistorySystemDate": "February",
+    "educationalHistorySystemDesc": "This project is the result of academic work. The school history system allows the registration of subjects and grades, in addition to providing listing and report generation functionalities",
+
+    "passwordGeneratorLabel": "Password Generator",
+    "passwordGeneratorDate": "January",
+    "passwordGeneratorDesc": "This project consists of a password generator that allows users to customize password creation according to their preferences"
+}
