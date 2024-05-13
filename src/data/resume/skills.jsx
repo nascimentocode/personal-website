@@ -1,90 +1,90 @@
 export const skillColor = {
-    "linguagens": "#689B68",
-    "desenvolvimento web": "#3896E2",
+    "languages": "#689B68",
+    "webdev": "#3896E2",
     "javascript": "#515DD4",
-    "banco de dados": "#40494E",
-    "ferramentas": "#C3423F",
+    "database": "#40494E",
+    "tools": "#C3423F",
 }
 
 export const skills = [
     {
         title: "Lua",
         competence: 1,
-        category: ["linguagens"]
+        category: ["languages"]
     },
     {
         title: "PostgreSQL",
         competence: 1,
-        category: ["banco de dados", "desenvolvimento web"]
+        category: ["database", "webdev"]
     },
     {
         title: "HTML + CSS",
         competence: 3,
-        category: ["linguagens", "desenvolvimento web"]
+        category: ["languages", "webdev"]
     },
     {
         title: "Bootstrap",
         competence: 2,
-        category: ["ferramentas", "desenvolvimento web"]
+        category: ["tools", "webdev"]
     },
     {
         title: "Git",
         competence: 2,
-        category: ["ferramentas"]
+        category: ["tools"]
     },
     {
         title: "SQLite",
         competence: 2,
-        category: ["banco de dados", "desenvolvimento web"]
+        category: ["database", "webdev"]
     },
     {
         title: "Bash",
         competence: 1,
-        category: ["ferramentas", "linguagens"]
+        category: ["tools", "languages"]
     },
     {
         title: "Python",
         competence: 3,
-        category: ["linguagens", "python"]
+        category: ["languages", "python"]
     },
     {
         title: "Java",
         competence: 3,
-        category: ["linguagens"]
+        category: ["languages"]
     },
     {
         title: "MySQL",
         competence: 3,
-        category: ["banco de dados", "desenvolvimento web"]
+        category: ["database", "webdev"]
     },
     {
         title: "JavaScript",
         competence: 2,
-        category: ["javascript", "linguagens", "desenvolvimento web"]
+        category: ["javascript", "languages", "webdev"]
     },
     {
         title: "PHP",
         competence: 2,
-        category: ["linguagens", "desenvolvimento web"]
+        category: ["languages", "webdev"]
     },
     {
         title: "React",
         competence: 2,
-        category: ["javascript", "desenvolvimento web"]
+        category: ["javascript", "webdev"]
     },
     {
         title: "Typescript",
         competence: 2,
-        category: ["javascript", "desenvolvimento web", "linguagens"]
+        category: ["javascript", "webdev", "languages"]
     },
     {
         title: "Django",
         competence: 2,
-        category: ["desenvolvimento web", "python"]
+        category: ["webdev", "python"]
     },
     {
         title: "Flask",
         competence: 1,
-        category: ["desenvolvimento web", "python"]
+        category: ["webdev", "python"]
     },
 ]

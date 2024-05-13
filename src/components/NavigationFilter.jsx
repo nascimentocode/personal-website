@@ -10,7 +10,7 @@ function NavigationSkill({ setSelectedFilters, selectedFilter, filters }) {
 
     return(
         <div id="navigation-skill" style={ {padding: paddingStyle} }>
-            {filters.map((filter, index) => <a className={selectedFilter === filter ? 'active' : ''} key={index} onClick={() => setSelectedFilters(filter)}>{filter}</a>)}
+            {filters.map((filter, index) => <a className={selectedFilter === filter.id ? 'active' : ''} key={index} onClick={() => setSelectedFilters(filter.id)}>{filter.text}</a>)}
         </div>
     )
 }

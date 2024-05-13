@@ -6,7 +6,7 @@ import "../index.css"
 function ProgressBar({ data }) {
     let categoryColor = null
     
-    const priorityCategories = [ "banco de dados", "javascript", "linguagens", "ferramentas", "desenvolvimento web"]
+    const priorityCategories = [ "database", "javascript", "languages", "tools", "webdev"]
 
     if (data.category.length > 1) {
         for (var priorityCategory of priorityCategories) {
