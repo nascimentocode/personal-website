@@ -1,8 +1,15 @@
 import { useState, useCallback, useEffect  } from 'react'
-import dataPersonal from '../data/stats/personal'
-import dataSite from '../data/stats/site'
+import { useTranslation } from 'react-i18next'
+
+import getStatsPersonal from '../data/stats/personal'
+import getStatsSite from '../data/stats/site'
 
 function Stats(){
+    const { t } = useTranslation('stats')
+
+    const dataPersonal = getStatsPersonal()
+    const dataSite = getStatsSite()
+
     const [data, setData] = useState(dataSite)
 
     const fetchData = useCallback(async () => {
@@ -18,20 +25,19 @@ function Stats(){
                 : field.value,
             }))
         )
-    }, [])
+    }, [dataSite])
 
-    console.log(data)
     useEffect(() => {
         fetchData();
     }, [fetchData]);
 
     return (
         <section>
-            <h2>Status</h2>
+            <h2>{t('topic')}</h2>
             <div className="divider-content"></div>
             <div className="section-content">
                 <div className="stats">
-                    <h3>Algumas estatísticas sobre mim</h3>
+                    <h3>{t('titleStatsMe')}</h3>
                     <div id="stats-personal-table">
                         <table>
                             <tbody>
@@ -46,7 +52,7 @@ function Stats(){
                     </div>
                 </div>
                 <div className="stats">
-                    <h3>Algumas estatísticas sobre este site</h3>
+                    <h3>{t('titleStatsSite')}</h3>
                     <div id="stats-site-table">
                         <table>
                             <tbody>

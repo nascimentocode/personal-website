@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next"
 
 function Age() {
     const [age, setAge] = useState()
@@ -19,22 +20,28 @@ function Age() {
     return <>{age}</>
 }
 
-const data = [
-    {
-        key: "age",
-        label: "Idade atual",
-        value: <Age />
-    },
-    {
-        key: "countries",
-        label: "Países visitados",
-        value: 0
-    },
-    {
-        key: "location",
-        label: "Atual Cidade",
-        value: "Campinas, SP"
-    },
-]
+function getStatsPersonal() {
+    const { t } = useTranslation('personalStats')
 
-export default data
+    const data = [
+        {
+            key: "age",
+            label: t('age'),
+            value: <Age />
+        },
+        {
+            key: "countries",
+            label: t('countriesVisited'),
+            value: 0
+        },
+        {
+            key: "location",
+            label: t('currentCity'),
+            value: "Campinas, SP"
+        },
+    ]      
+
+    return data
+}
+
+export default getStatsPersonal
