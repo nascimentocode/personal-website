@@ -1,0 +1,10 @@
+{
+    "topic": "About me",
+    "aboutMe1": "Hello! I'm a {{age}}-year-old technology enthusiast passionate about the art of Back-End development. My journey into this fascinating world began back in 2017, but it was in 2020 that I decided to dive head first into studies and practice to improve my skills.",
+    "aboutMe2": "During my time as a Computer Technician student, I had the opportunity to explore several languages, including PHP, SQL, C#, and even venture a little into the world of React-Native. This period was fundamental in awakening my interest and directing my path towards Computer Science, in which I began my academic journey in July 2020.",
+    "aboutMe3": "Throughout this academic career, I had the opportunity to delve deeper into languages such as Python, Java, C++, SQL and Bash. However, my thirst for knowledge goes beyond the academic curriculum. Of my own free will, I immersed myself in studies involving Python, Java, Javascript, Typescript and Lua. The passion for learning is what drives me, as I believe that knowledge is a limitless ocean, and I am always eager to explore new horizons.",
+    "aboutMe4": "I love challenges and the complexity of Back-End development fascinates me. I see programming not just as a profession, but as a form of creative expression, where each line of code is an opportunity to create something innovative and functional.",
+    "aboutMe5": "If I had to choose a favorite language, it would be Python. Its simplicity combined with its versatility enchants me, and I feel at home when I'm coding in this language.",
+    "aboutMe6": "I am excited about the possibilities that the future holds and committed to continuing my journey of constant learning. After all, for me, there is never too much knowledge and development is a continuous and exciting process.",
+    "aboutMe7": "Feel free to explore my website and follow my evolution in this ever-changing world!"
+}
