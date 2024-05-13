@@ -1,22 +1,29 @@
 import "../index.css"
+
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 import CardProject from "../components/CardProject"
-import data from "../data/projects"
+import getProjects from "../data/projects"
 import NavigationFilter from "../components/NavigationFilter"
 
 function Projects() {
-    const [selectedLanguage, setSelectedLanguage] = useState("todas")
+    const { t } = useTranslation('projects')
 
-    const filteredProjects = selectedLanguage === "todas" ? data : data.filter(project => project.language.includes(selectedLanguage))
+    const filterAllId = "all"
+    const filters = [{ id: filterAllId, text: t('filterAll') }, { id: "python", text: "Python" }, { id: "java", text: "Java" }]
 
-    const filters = ["todas", "python", "java"]
+    const [selectedLanguage, setSelectedLanguage] = useState(filterAllId)
+    
+    const data = getProjects()
+
+    const filteredProjects = selectedLanguage === filterAllId ? data : data.filter(project => project.language.includes(selectedLanguage))
 
     let colorLanguage = ""
 
     return (
         <section>
-            <h2>Projetos</h2>
+            <h2>{t('topic')}</h2>
             <NavigationFilter setSelectedFilters={setSelectedLanguage} selectedFilter={selectedLanguage} filters={filters} />
             <div className="divider-content"></div>
             <div className="section-content">
