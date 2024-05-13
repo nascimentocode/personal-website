@@ -9,8 +9,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 import { NavLink } from "react-router-dom"
+import { useTranslation } from "react-i18next";
 
 function Sidebar({to, textButton}) {
+    const { t } = useTranslation('sidebar')
+
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     }
@@ -20,13 +23,13 @@ function Sidebar({to, textButton}) {
             <div>
                 <img src={Perfil} width={200}/>
                 <h2 id="profile-name">João Vitor Nascimento da Silva</h2>
-                <p>Back-End Developer</p>
-                <p><span><MdLocationPin /></span> Campinas, SP, Brasil</p>
+                <p>{t('area')}</p>
+                <p><span><MdLocationPin /></span> Campinas, SP, {t('location')}</p>
             </div>
             <div className="divider-sidebar"></div>
             <div id="about-sidebar">
-                <h3>Sobre</h3>
-                <p>Olá, sou João Vitor. Atualmente estou cursando Ciência da Computação.</p>
+                <h3>{t('titleAbout')}</h3>
+                <p>{t('about')}</p>
                 <NavLink to={to} onClick={scrollToTop}>{textButton}</NavLink>
             </div>
             <div className="divider-sidebar"></div>
