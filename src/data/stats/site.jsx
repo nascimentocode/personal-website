@@ -1,11 +1,12 @@
-import dayjs from 'dayjs';
+import dayjs from 'dayjs'
 import 'dayjs/locale/pt-br'
+import 'dayjs/locale/en'
 
 import { useTranslation } from 'react-i18next';
 
 function getStatsSite() {
     const { t } = useTranslation('siteStats')
-        
+
     const data = [
         {
             label: t('stars'),
@@ -22,7 +23,7 @@ function getStatsSite() {
         {
             label: t('lastUpdated'),
             key: "pushed_at",
-            format: (date) => dayjs(date).locale('pt-br').format('DD MMMM, YYYY'),
+            format: (date) => dayjs(date).locale(t('dateLng')).format(t('dateFormat')),
         },
         {
             label: t('jsLines'),
