@@ -3,5 +3,7 @@
     "views": "Número de visualizações deste repositório",
     "forks": "Número de forks",
     "lastUpdated": "Última atualização em",
+    "dateLng": "pt-br",
+    "dateFormat": "DD MMMM, YYYY",
     "jsLines": "Linhas de Javascript alimentando o site"
 }
