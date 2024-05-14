@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useState } from "react"
-import i18n from "../i18n"
 import { useTranslation } from "react-i18next"
 
 function LanguageSwitcher() {
-    const { t } = useTranslation('languageSwitcher')
+    const { i18n, t } = useTranslation('languageSwitcher')
 
     const getInitialLanguage = () => {
         const savedLanguage = localStorage.getItem('language')
@@ -24,7 +23,7 @@ function LanguageSwitcher() {
 
     return (
         <select id="dropdown" onChange={handleChangeLanguage} value={languageSelected}>
-            <option value="ptBR">{t('portuguese')}</option>
+            <option value="pt-BR">{t('portuguese')}</option>
             <option value="en">{t('english')}</option>
         </select>
     )
