@@ -30,7 +30,8 @@ import ptBRPersonalStatsTranslations from './locales/ptBR/stats/personal.json'
 import ptBRSiteStatsTranslations from './locales/ptBR/stats/site.json'
 
 i18n.use(initReactI18next).init({
-    fallbackLng: "ptBR",
+    lng: 'pt-BR',
+    fallbackLng: "pt-BR",
     interpolation: {
         escapeValue: false
     },
@@ -50,7 +51,7 @@ i18n.use(initReactI18next).init({
             personalStats: enPersonalStatsTranslations,
             siteStats: enSiteStatsTranslations,
         },
-        ptBR: {
+        "pt-BR": {
             homepage: ptBRHomepageTranslations,
             about: ptBRAboutTranslations,
             resume: ptBRResumeTranslations,
@@ -69,10 +70,3 @@ i18n.use(initReactI18next).init({
 })
 
 export default i18n
-
-/* 
-    Traducoes
-        - Menus filtragem
-            1. Skills - Curriculo
-            2. Projetos OK
-*/
