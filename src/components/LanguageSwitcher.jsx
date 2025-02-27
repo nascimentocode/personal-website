@@ -25,6 +25,7 @@ function LanguageSwitcher() {
         <select id="dropdown" onChange={handleChangeLanguage} value={languageSelected}>
             <option value="pt-BR">{t('portuguese')}</option>
             <option value="en">{t('english')}</option>
+            <option value="es">{t('spanish')}</option>
         </select>
     )
 }

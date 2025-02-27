@@ -15,6 +15,20 @@ import enProjectsTranslations from './locales/en/projects.json'
 import enPersonalStatsTranslations from './locales/en/stats/personal.json'
 import enSiteStatsTranslations from './locales/en/stats/site.json'
 
+import esHomepageTranslations from './locales/es/homepage.json'
+import esAboutTranslations from './locales/es/about.json'
+import esResumeTranslations from './locales/es/resume/resume.json'
+import esStatsTranslations from './locales/es/stats/stats.json'
+import esContactTranslations from './locales/es/contact.json'
+import esSidebarTranslations from './locales/es/sidebar.json'
+import esNavbarTranslations from './locales/es/navbar/navbar.json'
+import esLanguageSwitcherTranslations from './locales/es/navbar/languageSwitcher.json'
+import esErrorPageTranslations from './locales/es/errorPage.json'
+import esCertificatesTranslations from './locales/es/resume/certificates.json'
+import esProjectsTranslations from './locales/es/projects.json'
+import esPersonalStatsTranslations from './locales/es/stats/personal.json'
+import esSiteStatsTranslations from './locales/es/stats/site.json'
+
 import ptBRHomepageTranslations from './locales/ptBR/homepage.json'
 import ptBRAboutTranslations from './locales/ptBR/about.json'
 import ptBRResumeTranslations from './locales/ptBR/resume/resume.json'
@@ -50,6 +64,21 @@ i18n.use(initReactI18next).init({
             projects: enProjectsTranslations,
             personalStats: enPersonalStatsTranslations,
             siteStats: enSiteStatsTranslations,
+        },
+        es:  {
+            homepage: esHomepageTranslations,
+            about: esAboutTranslations,
+            resume: esResumeTranslations,
+            stats: esStatsTranslations,
+            contact: esContactTranslations,
+            sidebar: esSidebarTranslations,
+            navbar: esNavbarTranslations,
+            languageSwitcher : esLanguageSwitcherTranslations,
+            errorPage: esErrorPageTranslations,
+            certificates: esCertificatesTranslations,
+            projects: esProjectsTranslations,
+            personalStats: esPersonalStatsTranslations,
+            siteStats: esSiteStatsTranslations,
         },
         "pt-BR": {
             homepage: ptBRHomepageTranslations,
