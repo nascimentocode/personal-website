@@ -7,11 +7,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { SiCodewars } from "react-icons/si";
 
 import { NavLink } from "react-router-dom"
 import { useTranslation } from "react-i18next";
 
-function Sidebar({to, textButton}) {
+function Sidebar({ to, textButton }) {
     const { t } = useTranslation('sidebar')
 
     const scrollToTop = () => {
@@ -21,7 +22,7 @@ function Sidebar({to, textButton}) {
     return (
         <aside>
             <div>
-                <img src={Perfil} width={200}/>
+                <img src={Perfil} width={200} />
                 <h2 id="profile-name">João Vitor Nascimento da Silva</h2>
                 <p>{t('area')}</p>
                 <p><span><MdLocationPin /></span> Campinas, SP, {t('location')}</p>
@@ -37,11 +38,12 @@ function Sidebar({to, textButton}) {
                 <a href="https://github.com/nascimentocode" target="_blanck"><FaGithub /></a>
                 <a href="https://www.instagram.com/notnascimento/" target="_blanck"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/joao-vitor-nascimento-da-silva/" target="_blanck"><FaLinkedin /></a>
+                <a href="https://www.codewars.com/users/nascimentocode/" target="_blanck"><SiCodewars /></a>
                 <a href="mailto:contato.nascimentojv@gmail.com" target="_blanck"><MdOutlineEmail /></a>
             </div>
             <div className="divider-sidebar"></div>
             <div id="entitlement">
-                <p>&copy; 2023 Nascimentocode</p>
+                <p>&copy; 2025 Nascimentocode</p>
             </div>
         </aside>
     )
