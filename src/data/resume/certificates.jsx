@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-function getCertificates(){
+function getCertificates() {
     const { t } = useTranslation('certificates')
 
     const certificates = [
@@ -43,6 +43,10 @@ function getCertificates(){
         {
             title: "Pystack Week 10",
             imageURL: "/personal-website/images/certificates/pystack-week-10.png",
+        },
+        {
+            title: "4 Days 4 Projects #2",
+            imageURL: "/personal-website/images/certificates/4Days4Projects.png",
         },
     ]
 
