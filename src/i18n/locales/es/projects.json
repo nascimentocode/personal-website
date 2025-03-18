@@ -1,36 +1,31 @@
 {
     "topic": "Proyectos",
     "filterAll": "Todos",
-
     "telemedecineSystemLabel": "Sistema de telemedicina",
     "telemedecineSystemDate": "Abril",
     "telemedecineSystemDesc": "Este proyecto consiste en una plataforma que permite la prestación de servicios médicos a distancia, utilizando tecnologías de comunicación para conectar pacientes y profesionales de la salud",
-
     "IAPredictStockPriceLabel": "Predicción de precios de acciones con IA",
     "IAPredictStockPriceDate": "Marzo",
     "IAPredictStockPriceDesc": "Este proyecto consiste en una IA para predecir el comportamiento y el precio de las acciones",
-
     "investmentAnalysisAutomationLabel": "Automatización de análisis de inversión",
     "investmentAnalysisAutomationDate": "Marzo",
     "investmentAnalysisAutomationDesc": "Este proyecto consiste en automatizar el envío de análisis de precios de acciones por correo electrónico",
-
     "budgetIssuanceAutomationLabel": "Automatización de generación de presupuestos en PDF",
     "budgetIssuanceAutomationDate": "Marzo",
     "budgetIssuanceAutomationDesc": "Este proyecto consiste en automatizar la generación de presupuestos en PDF",
-
     "barcodeGeneratorLabel": "Generador de códigos de barras",
     "barcodeGeneratorDate": "Febrero",
     "barcodeGeneratorDesc": "Este proyecto consiste en un backend que, al recibir una solicitud web, utiliza el valor recibido para generar un código de barras",
-
     "linearSystemResolverLabel": "Resolutor de sistemas lineales",
     "linearSystemResolverDate": "Febrero",
     "linearSystemResolverDesc": "Este proyecto consiste en un resolutor de sistemas lineales, que recibe una entrada en formato CSV que representa un sistema lineal y devuelve la solución de ese sistema",
-
     "educationalHistorySystemLabel": "Sistema de Historial Educativo",
     "educationalHistorySystemDate": "Febrero",
     "educationalHistorySystemDesc": "Este proyecto es el resultado de un trabajo académico. El sistema de historial escolar permite el registro de asignaturas y calificaciones, además de proporcionar funcionalidades de listado y generación de reportes",
-
     "passwordGeneratorLabel": "Generador de contraseñas",
     "passwordGeneratorDate": "Enero",
-    "passwordGeneratorDesc": "Este proyecto consiste en un generador de contraseñas que permite a los usuarios personalizar la creación de contraseñas según sus preferencias"
+    "passwordGeneratorDesc": "Este proyecto consiste en un generador de contraseñas que permite a los usuarios personalizar la creación de contraseñas según sus preferencias",
+    "financeControlLabel": "Control de las finanzas personales",
+    "financeControlDate": "Marzo",
+    "financeControlDesc": "Este proyecto consiste en el control financiero personal a través de un terminal"
 }

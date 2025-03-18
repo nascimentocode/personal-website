@@ -1,36 +1,31 @@
 {
     "topic": "Projetos",
     "filterAll": "Todas",
-
     "telemedecineSystemLabel": "Sistema de telemedicina",
     "telemedecineSystemDate": "Abril",
     "telemedecineSystemDesc": "Este projeto consiste em uma plataforma que permite a prestação de serviços médicos à distância, utilizando tecnologias de comunicação para conectar pacientes e profissionais de saúde",
-
     "IAPredictStockPriceLabel": "IA de previsão do preço de ações",
     "IAPredictStockPriceDate": "Março",
     "IAPredictStockPriceDesc": "Este projeto consiste em uma IA de previsão de comportamento e preço de ações",
-
     "investmentAnalysisAutomationLabel": "Automatização de análise de investimento",
     "investmentAnalysisAutomationDate": "Março",
     "investmentAnalysisAutomationDesc": "Este projeto consiste em automatizar o envio por email de análises das cotações de ações",
-
     "budgetIssuanceAutomationLabel": "Automatização de geração de orçamentos em PDF",
     "budgetIssuanceAutomationDate": "Março",
     "budgetIssuanceAutomationDesc": "Este projeto consiste em automatizar a geração de orçamentos em PDF",
-
     "barcodeGeneratorLabel": "Gerador de código de barra",
     "barcodeGeneratorDate": "Fevereiro",
     "barcodeGeneratorDesc": "Este projeto consiste em um backend que, mediante uma requisição web, emprega o valor recebido para a geração de um código de barras",
-
     "linearSystemResolverLabel": "Resolvedor de sistema linear",
     "linearSystemResolverDate": "Fevereiro",
     "linearSystemResolverDesc": "Este projeto consiste em um resolvedor de sistemas lineares, que recebe uma entrada no formato CSV representando um sistema linear e retorna a solução desse sistema",
-
     "educationalHistorySystemLabel": "Sistema de histórico escolar",
     "educationalHistorySystemDate": "Fevereiro",
     "educationalHistorySystemDesc": "Este projeto é o resultado de um trabalho acadêmico. O sistema de histórico escolar permite o cadastro de matérias e notas, além de fornecer funcionalidades de listagem e geração de relatórios",
-
     "passwordGeneratorLabel": "Gerador de senha",
     "passwordGeneratorDate": "Janeiro",
-    "passwordGeneratorDesc": "Este projeto consiste em um gerador de senhas que permite aos usuários personalizar a criação de senhas de acordo com suas preferências"
+    "passwordGeneratorDesc": "Este projeto consiste em um gerador de senhas que permite aos usuários personalizar a criação de senhas de acordo com suas preferências",
+    "financeControlLabel": "Controle de finanças pessoal",
+    "financeControlDate": "Março",
+    "financeControlDesc": "Esse projeto consiste em um controle de financas pessoal via terminal"
 }
