@@ -8,6 +8,11 @@ export const skillColor = {
 
 export const skills = [
     {
+        title: "RESTFul API",
+        competence: 3,
+        category: ["tools"]
+    },
+    {
         title: "Lua",
         competence: 1,
         category: ["languages"]
@@ -79,7 +84,7 @@ export const skills = [
     },
     {
         title: "Django",
-        competence: 2,
+        competence: 3,
         category: ["webdev", "python"]
     },
     {
