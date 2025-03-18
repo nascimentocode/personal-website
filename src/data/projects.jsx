@@ -8,11 +8,20 @@ import IASImg from "../assets/projects/IAStocks.png"
 import AAImg from "../assets/projects/automationAnalysis.png"
 import ABImg from "../assets/projects/automationBudget.png"
 import TSImg from "../assets/projects/telemedicine-system.png"
+import PFCImg from "../assets/projects/personalFinanceControl.png"
 
 function getProjects() {
     const { t } = useTranslation('projects')
 
     const data = [
+        {
+            link: "https://github.com/nascimentocode/Personal-finance-control",
+            label: t('financeControlLabel'),
+            language: ["python"],
+            date: t('financeControlDate') + ", 2025",
+            img: PFCImg,
+            desc: t('financeControlDesc')
+        },
         {
             link: "https://github.com/nascimentocode/telemedicine-system",
             label: t('telemedecineSystemLabel'),
@@ -27,7 +36,7 @@ function getProjects() {
             language: ["python"],
             date: t('IAPredictStockPriceDate') + ", 2024",
             img: IASImg,
-            desc:  t('IAPredictStockPriceDesc')
+            desc: t('IAPredictStockPriceDesc')
         },
         {
             link: "https://github.com/nascimentocode/investment-analysis-automation",
